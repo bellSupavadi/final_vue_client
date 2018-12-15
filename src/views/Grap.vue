@@ -14,13 +14,13 @@ export default {
             labels: [ ],
             datasets:[{
                 data:[],
-                backgroundColor:["tiger","Yellow","Purple","Red","Yellow","Purple","Red","Yellow","Purple","Purple","Purple","Purple","Purple","Yellow","Purple","Yellow","Purple","Yellow","Purple","Red","Yellow","Purple","Red","Yellow","Purple"]
+                backgroundColor:["pink","brown","rose","pink","Yellow","Purple","pink","Yellow","Purple","pink","Purple","green","Purple","Yellow","Purple","Yellow","Purple","Yellow","Purple","pink","Yellow","Purple","pink","Yellow","Purple"]
             }],
             option:{
                 title:{
                     display:true,
                     position:"bottom",
-                    text: "Fruits"
+                   
                 }
             }
         };

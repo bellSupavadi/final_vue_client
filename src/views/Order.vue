@@ -25,16 +25,16 @@
     </template>
     <template slot="row-details" slot-scope="row">
       <b-card>
-        <b-row class="mb-2">
-          <b-col sm="3" class="text-sm-right"><b>Order_ID:</b></b-col>
+        <b-row class="mb-4">
+          <b-col sm="5" class="text-sm-right"><b>Order_ID:</b></b-col>
           <b-col>{{ row.item.order_id }}</b-col>
         </b-row>
-        <b-row class="mb-2">
-          <b-col sm="3" class="text-sm-right"><b>Ship_name:</b></b-col>
+        <b-row class="mb-4">
+          <b-col sm="5" class="text-sm-right"><b>Ship_name:</b></b-col>
           <b-col>{{ row.item.ship_name }}</b-col>
         </b-row>
-        <b-row class="mb-2">
-          <b-col sm="3" class="text-sm-right"><b>Order_date:</b></b-col>
+        <b-row class="mb-4">
+          <b-col sm="5" class="text-sm-right"><b>Order_date:</b></b-col>
           <b-col>{{ row.item.order_date }}</b-col>
         </b-row>
         <b-button size="sm" @click="row.toggleDetails">Hide Details</b-button>
