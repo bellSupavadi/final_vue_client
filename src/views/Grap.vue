@@ -14,7 +14,7 @@ export default {
             labels: [ ],
             datasets:[{
                 data:[],
-                backgroundColor:["Red","Yellow","Purple","Red","Yellow","Purple","Red","Yellow","Purple","Purple","Purple","Purple","Purple","Yellow","Purple","Yellow","Purple","Yellow","Purple","Red","Yellow","Purple","Red","Yellow","Purple"]
+                backgroundColor:["tiger","Yellow","Purple","Red","Yellow","Purple","Red","Yellow","Purple","Purple","Purple","Purple","Purple","Yellow","Purple","Yellow","Purple","Yellow","Purple","Red","Yellow","Purple","Red","Yellow","Purple"]
             }],
             option:{
                 title:{
