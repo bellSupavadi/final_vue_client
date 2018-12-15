@@ -1,6 +1,6 @@
 <template>
 
-<div>
+<div v-if="datasets[0].data.length >0">
     <chartjs-bar v-bind:labels="labels" v-bind:datasets="datasets" v-bind:option="option"></chartjs-bar></div>
  
 </template>
@@ -31,8 +31,8 @@ export default {
       .get('https://fierce-shore-66218.herokuapp.com/api/orderCount')
       .then(function(response){
 for(var i=0;i<response.data.data.length;i++){
-    console.log(response.data.data[i].ship_name)
-instance.labels.push(response.data.data[i].ship_name)
+    console.log(response.data.data[i].ship_country)
+instance.labels.push(response.data.data[i].ship_country)
 instance.datasets[0].data.push(response.data.data[i].count)}
       })
   }
