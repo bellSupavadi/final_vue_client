@@ -1,9 +1,19 @@
+
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+ <div id="app">
+ <nav class="navbar navbar-expand navbar-dark bg-info">
+    <div class="nav navbar-nav">
+          <router-link to="/" class="nav-item nav-link active">Home</router-link> |
+      <router-link to="/about" class="nav-item nav-link">About</router-link>|
+      <router-link to="/products" class="nav-item nav-link">Products</router-link>|
+      <router-link to="/users" class="nav-item nav-link">Users</router-link>|
+       <router-link to="/grap" class="nav-item nav-link">Grap</router-link>
     </div>
+</nav>
+ 
+    
+    
+    
     <router-view/>
   </div>
 </template>
