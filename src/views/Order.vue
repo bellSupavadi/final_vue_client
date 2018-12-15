@@ -1,4 +1,5 @@
 <template>
+
  <b-row>
    
       <b-col md="6" class="my-1">
@@ -48,6 +49,7 @@
     <div>CurrentPage: {{pageIndex}}</div>  
     
   </b-row>
+
 </template>
 
 <script>
@@ -55,7 +57,7 @@ import axios from "axios";
 export default {
   data () {
     return {
-      message: "Project 2",
+      message: "Oder",
       items: [],
       filter: null,
       pageSize:10,
@@ -96,11 +98,11 @@ export default {
     }
   },
   async mounted() {
-    let products = await axios.get(
+    let Orders = await axios.get(
       "https://fierce-shore-66218.herokuapp.com/api/order"
     );
-    products = products.data.data;
-    this.items = products;
+    Orders = Orders.data.data;
+    this.items = Orders;
    
   }
 }

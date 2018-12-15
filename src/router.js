@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Products from './views/Products.vue'
-import Users from './views/Users.vue'
+import order from './views/Order.vue'
 import Grap from './views/Grap.vue'
 import BootstrapVue from 'bootstrap-vue'
 
@@ -20,22 +19,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    },
-    {
-      path: '/products',
-      name: 'products',
-      component: Products
-    },
-    {
-      path: '/users',
-      name: 'users',
-      component: Users
+      path: '/order',
+      name: 'order',
+      component: order
     },
     {
       path: '/grap',
